@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/karellincoln/AlgorithmTrainingCamp/common"
+)
 
 // 分治秘籍
 //（1）分解：将原问题分解为若干规模较小、相互独立且与原问题形式相同的子问题。
@@ -41,12 +44,12 @@ func main() {
 	var n int
 	var w []int
 	_, err := fmt.Scanln(&n)
-	w, err = getArray(n)
+	w, err = common.GetArray(n)
 
 	for err == nil {
 		MergeSort(w)
 		fmt.Println(w)
 		_, err = fmt.Scanln(&n)
-		w, err = getArray(n)
+		w, err = common.GetArray(n)
 	}
 }

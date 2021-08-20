@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"sort"
 	"github.com/karellincoln/AlgorithmTrainingCamp/common"
+	"sort"
 )
 
 // 最优子结构性质。当一个问题的最优解包含其子问题的最优解时，称此问题具有最优子结构性质。问题的最优子结构性质是该问题是否可以用贪心算法求解的关键。
@@ -38,6 +38,6 @@ func main() {
 	for err == nil {
 		bestLoad(c, w)
 		_, err = fmt.Scanln(&c, &n)
-		w, err = getArray(n)
+		w, err = common.GetArray(n)
 	}
 }
