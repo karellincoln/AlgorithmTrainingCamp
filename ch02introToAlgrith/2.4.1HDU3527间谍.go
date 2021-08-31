@@ -14,7 +14,16 @@ func find(str []string, v string) bool {
 	}
 	return false
 }
-
+/* input:
+8 4 3
+zhan qian sun li zhou wu zhen wang
+zhao qian sun li
+zhao zhou zheng
+2 2 2
+zhao qian
+zhao qian
+zhao qian
+ */
 func main() {
 	var a, b, c int;
 	var x, y, z []string;
