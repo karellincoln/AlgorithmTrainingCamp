@@ -33,11 +33,11 @@ func main() {
 	var c, n int
 	var w []int
 	_, err := fmt.Scanln(&c, &n)
-	w, err = common.GetArray(n)
+	w, err = common.GetIntArray(n)
 
 	for err == nil {
 		bestLoad(c, w)
 		_, err = fmt.Scanln(&c, &n)
-		w, err = common.GetArray(n)
+		w, err = common.GetIntArray(n)
 	}
 }

@@ -44,12 +44,12 @@ func main() {
 	var n int
 	var w []int
 	_, err := fmt.Scanln(&n)
-	w, err = common.GetArray(n)
+	w, err = common.GetIntArray(n)
 
 	for err == nil {
 		MergeSort(w)
 		fmt.Println(w)
 		_, err = fmt.Scanln(&n)
-		w, err = common.GetArray(n)
+		w, err = common.GetIntArray(n)
 	}
 }
